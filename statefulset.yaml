@@ -122,10 +122,9 @@ spec:
       name: data
     spec:
       accessModes: [ "ReadWriteOnce" ]
-      storageClassName: "standard"
       resources:
         requests:
-          storage: 100Mi
+          storage: 5Gi
 ---
 apiVersion: v1
 kind: Service

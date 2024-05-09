@@ -9,12 +9,12 @@ kubectl create ns postgresql
 Create our secret for our first PostgreSQL instance:
 
 ```
-kubectl -n postgresql create secret generic postgresql `
-  --from-literal POSTGRES_USER="postgresadmin" `
-  --from-literal POSTGRES_PASSWORD='admin123' `
-  --from-literal POSTGRES_DB="postgresdb" `
-  --from-literal REPLICATION_USER="replicationuser" `
-  --from-literal REPLICATION_PASSWORD='replicationPassword'
+  kubectl -n postgresql create secret generic postgresql \
+    --from-literal POSTGRES_USER="postgresadmin" \
+    --from-literal POSTGRES_PASSWORD="admin123" \
+    --from-literal POSTGRES_DB="postgresdb" \
+    --from-literal REPLICATION_USER="replicationuser" \
+    --from-literal REPLICATION_PASSWORD="replicationPassword"
 ```
 
 Deploy our PostgreSQL instance:
