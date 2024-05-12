@@ -3,13 +3,13 @@
 Deploy a namespace to hold our resources:
 
 ```
-kubectl create ns postgresql
+kubectl create ns service-management
 ```
 
 Create our secret for our first PostgreSQL instance:
 
 ```
-  kubectl -n postgresql create secret generic postgresql \
+  kubectl -n service-management create secret generic postgresql \
     --from-literal POSTGRES_USER="postgresadmin" \
     --from-literal POSTGRES_PASSWORD="admin123" \
     --from-literal POSTGRES_DB="postgresdb" \
