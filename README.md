@@ -20,7 +20,7 @@ Create our secret for our first PostgreSQL instance:
 Deploy our PostgreSQL instance:
 
 ```
-kubectl -n postgresql apply -f ./statefulset.yaml
+kubectl apply -f ./statefulset.yaml
 ```
 
 ### Check our installation
